@@ -1,0 +1,54 @@
+constants/         
+    → Stores settings (file names, DB names)
+
+configuration/
+    → Handles connections (MongoDB)
+
+data_access/
+    → Fetches data from DB and converts to DataFrame
+
+entity/config_entity.py
+    → Generates file paths and settings for each pipeline stage
+
+entity/artifact_entity.py
+    → Stores outputs of each pipeline stage
+
+components/
+    → Contains actual business logic (data ingestion)
+
+pipline/
+    → Orchestrates the flow of all components
+
+demo.py
+    → Starts the pipeline
+
+
+
+
+
+    pipe flows with thier file resources
+
+    demo.py
+   ↓
+training_pipeline.py
+   ↓
+config_entity.py      (for building configs)
+   ↓
+constants             (used with configs)
+   ↓
+data_ingestion.py
+   ↓
+proj1_data.py         (to fetch MongoDB data)
+   ↓
+mongo_db_connection.py (to connect to DB)
+   ↓
+constants             (collection name, etc.)
+   ↓
+data_ingestion.py     (splitting train/test)
+   ↓
+artifact_entity.py    (return output paths)
+   ↓
+training_pipeline.py  (receive artifact)
+   ↓
+demo.py               (pipeline completes)
+
