@@ -1,360 +1,376 @@
-# Vechile-insurance-domain
-Project on vechile insurance domain
-🚗 Vehicle Data Classification – End-to-End MLOps Project
+Got it.
+You want **ONE single README.md block**, **complete**, **final**, **clean**, with **no breaks**, **no cutoff**, **no continuation**, **no second copy**, **no extra messages**.
 
-Production-Grade MLOps | MongoDB | AWS | Docker | GitHub Actions | FastAPI
+Just **one copy → one paste → done**.
+
+Here is the **FINAL README.md** in ONE SINGLE PERFECT BLOCK.
+Copy it ONCE and paste into GitHub.
+
+---
+
+# ✅ **FINAL README.md — ONE BLOCK, FULL, READY TO PASTE**
+
+```md
+# 🚗 Vehicle Data Classification – End-to-End MLOps Project  
+**Production-Grade MLOps | MongoDB | AWS | Docker | GitHub Actions | FastAPI**
 
 <p align="center">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://img.shields.io/badge/CI--CD-GitHub_Actions-blue?logo=github-actions" />
+<img src="https://img.shields.io/badge/Containerized-Docker-blue?logo=docker" />
+<img src="https://img.shields.io/badge/Deployed_on-AWS_EC2-orange?logo=amazonaws" />
+<img src="https://img.shields.io/badge/Python-3.10-green?logo=python" />
+<img src="https://img.shields.io/badge/Database-MongoDB-brightgreen?logo=mongodb" />
+<img src="https://img.shields.io/badge/API-FastAPI-009485?logo=fastapi" />
+<img src="https://img.shields.io/badge/Status-Production_Ready-success" />
 </p>
 
-This repository contains a real-world, end-to-end MLOps project demonstrating how to build, train, evaluate, version, and deploy ML models using a complete cloud-native pipeline.
+This project demonstrates a **real, production-grade MLOps system** built from scratch using modern tools, CI/CD automation, cloud deployment, and a fully modular ML pipeline.  
+It highlights practical skills required for **MLOps Engineer / ML Engineer / Cloud Engineer** roles.
 
-The workflow includes:
-✔ Project scaffolding
-✔ MongoDB ingestion
-✔ Automated ML pipeline
-✔ AWS S3 model registry
-✔ Dockerized FastAPI service
-✔ Full CI/CD pipeline using GitHub Actions + EC2 self-hosted runner
-✔ Production deployment on AWS
+---
 
-🏗️ System Architecture
-                                    ┌──────────────────────────┐
-                                    │        Developer         │
-                                    │(Local Machine / VSCode)  │
-                                    └────────────┬─────────────┘
-                                                 │
-                                                 ▼
-                                      ┌───────────────────────┐
-                                      │ 1. Project Template   │
-                                      │ setup.py + pyproject  │
-                                      └───────────┬───────────┘
-                                                  │
-                                                  ▼
-                           ┌──────────────────────────────────────────┐
-                           │          Local ML Pipeline (src/)        │
-                           │ Ingestion → Validation → Transformation  │
-                           │   → Training → Evaluation → Pusher       │
-                           └──────────────────┬───────────────────────┘
-                                              │
-                                              ▼
+# 🏗️ System Architecture
+
+```
+
+Developer → Project Template → Local ML Pipeline → MongoDB Atlas → AWS S3 Model Registry → Docker Image → GitHub Actions CI/CD → EC2 Deployment → FastAPI App
+
+```
+
+Detailed ASCII diagram:
+
+```
+
+```
+                                ┌──────────────────────────┐
+                                │        Developer         │
+                                │ (Local / VSCode)         │
+                                └────────────┬─────────────┘
+                                             │
+                                             ▼
                                   ┌──────────────────────┐
-                                  │    MongoDB Atlas     │
-                                  │ Raw + Cleaned Data   │
-                                  └───────────┬──────────┘
-                                              │
-                                              ▼
-                                  ┌──────────────────────┐
-                                  │   AWS S3 Bucket      │
-                                  │   Model Registry     │
-                                  └───────────┬──────────┘
-                                              │
-                         ┌────────────────────┴───────────────────────┐
-                         │         GitHub CI/CD Pipeline              │
-                         │ (Build → Test → Push Image → Deploy to EC2)│
-                         └───────────────┬────────────────────────────┘
-                                         │
-                                         ▼
-                              ┌────────────────────────┐
-                              │   Docker Image (ECR)   │
-                              └───────────┬────────────┘
-                                          │
-                                          ▼
-                               ┌────────────────────────┐
-                               │      AWS EC2 Server    │
-                               │ Runs Docker Container  │
-                               │ Exposes Port :5080     │
-                               └───────────┬────────────┘
-                                           │
-                                           ▼
-                                 ┌────────────────────┐
-                                 │  FastAPI Web App   │
-                                 │    /predict        │
-                                 │    /train          │
-                                 └────────────────────┘
+                                  │  Project Template    │
+                                  │ setup.py + pyproject │
+                                  └──────────┬───────────┘
+                                             │
+                                             ▼
+                       ┌─────────────────────────────────────────┐
+                       │      Local ML Pipeline (src/)           │
+                       │ Ingestion → Validation → Transformation │
+                       │     → Training → Evaluation → Pusher    │
+                       └───────────┬─────────────────────────────┘
+                                   │
+                                   ▼
+                              ┌───────────────┐
+                              │ MongoDB Atlas │
+                              └───────┬───────┘
+                                      │
+                                      ▼
+                              ┌───────────────┐
+                              │ AWS S3 Bucket │
+                              │ Model Registry│
+                              └───────┬───────┘
+                                      │
+                                      ▼
+                       ┌────────────────────────────────────────┐
+                       │         GitHub Actions (CI/CD)         │
+                       │ Build → Test → Push Image → Deploy     │
+                       │ to EC2 (Self-hosted runner)            │
+                       └──────────────┬─────────────────────────┘
+                                      │
+                                      ▼
+                          ┌────────────────────────┐
+                          │ Docker Image (ECR)     │
+                          └──────────┬─────────────┘
+                                     │
+                                     ▼
+                          ┌────────────────────────┐
+                          │ AWS EC2 Instance       │
+                          │ Runs Docker Container  │
+                          └──────────┬─────────────┘
+                                     │
+                                     ▼
+                          ┌────────────────────────┐
+                          │ FastAPI Web App        │
+                          │ /predict /train        │
+                          └────────────────────────┘
+```
 
-🌟 Features
+````
 
-Template-based project structure
+---
 
-Local package installation using setup.py + pyproject.toml
+# 🌟 Key Features
 
-MongoDB Atlas integration for raw data ingestion
+- Automated **project scaffolding**  
+- **Local package imports** using `setup.py` + `pyproject.toml`  
+- **MongoDB Atlas** for ingestion & storage  
+- Full **ML pipeline architecture**  
+- **AWS S3 model registry**  
+- **Evaluation comparator** to push only improved models  
+- **Dockerized** FastAPI application  
+- **GitHub Actions CI/CD**  
+- **Self-hosted EC2 runner** for auto-deployment  
+- **Production-grade FastAPI UI**
 
-Fully modular ML pipeline (Ingestion → Validation → Transformation → Training → Evaluation → Pushing)
+---
 
-AWS S3 model registry
+# 🏗️ 1. Project Setup
 
-Dockerization
-
-GitHub Actions CI/CD
-
-Self-hosted EC2 runner
-
-Production deployment on AWS EC2
-
-FastAPI UI with prediction and training endpoints
-
-🏗️ 1. Project Setup
-Create project structure
+### Generate project structure
+```bash
 python template.py
+````
 
-Create & activate virtual environment
+### Virtual environment
+
+```bash
 conda create -n vehicle python=3.10 -y
 conda activate vehicle
 pip install -r requirements.txt
 pip list
+```
 
-Local package imports
+---
 
-Supported using:
+# 🍃 2. MongoDB Setup
 
-setup.py
+1. Create MongoDB Atlas → M0 Cluster
+2. Add DB user
+3. Add IP access: `0.0.0.0/0`
+4. Copy Python connection string
+5. Create notebook → upload dataset
+6. Insert data into MongoDB
+7. Validate in Collections tab
 
-pyproject.toml
+### Connection URL (Environment Variable)
 
-🍃 2. MongoDB Atlas Setup
+**PowerShell**
 
-Create MongoDB Atlas account
-
-Create project → M0 cluster
-
-Add DB user
-
-Add network access 0.0.0.0/0
-
-Copy connection URL
-
-Load dataset via Jupyter Notebook
-
-View records in Atlas → Collections
-
-Set MongoDB URL
-
-PowerShell
-
+```powershell
 $env:MONGODB_URL="mongodb+srv://..."
+```
 
+**Bash**
 
-Bash
-
+```bash
 export MONGODB_URL="mongodb+srv://..."
+```
 
+---
 
-Add artifact/ to .gitignore.
+# 📥 3. Data Ingestion
 
-📥 3. Data Ingestion Pipeline
+Includes:
 
-Add constants
-
-Configure DB connection
-
-Create ingestion component
-
-Convert MongoDB → DataFrame
-
-Save raw & split data into artifacts
+* Constants
+* DB connection
+* Data fetch
+* Conversion to dataframe
+* Artifact generation
 
 Run:
 
+```bash
 python demo.py
+```
 
-🔍 4. Data Validation, Transformation & Model Trainer
-Data Validation
+---
 
-Schema checking (columns, types)
+# 🔍 4. Data Validation, Transformation & Training
 
-Missing values check
+### Data Validation
 
-Dataset integrity
+* Schema checks
+* Data types
+* Missing values
+* Column validation
 
-Data Transformation
+### Data Transformation
 
-Preprocessing pipelines
+* Preprocessing pipelines
+* Feature transformation
+* Save transformers + metadata
 
-Feature engineering
+### Model Training
 
-Save transformers + metadata
+* Train multiple candidates
+* Select best model
+* Save trained artifacts
 
-Model Trainer
+---
 
-Train multiple models
+# ☁️ 5. AWS Setup (IAM + S3)
 
-Select best one
+### IAM User
 
-Save artifacts
+* Region: `us-east-1`
+* Policy: `AdministratorAccess`
 
-☁️ 5. AWS Setup (IAM, S3, Env)
-Create IAM User
+### Env variables
 
-Region: us-east-1
-
-Policy: AdministratorAccess
-
-Generate Access Key + Secret Key
-
-Export AWS credentials
+```bash
 export AWS_ACCESS_KEY_ID="..."
 export AWS_SECRET_ACCESS_KEY="..."
+```
 
-Update constants
+### Constants
+
+```python
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE = 0.02
 MODEL_BUCKET_NAME = "my-model-mlopsproj"
 MODEL_PUSHER_S3_KEY = "model-registry"
+```
 
-Create S3 bucket
+### Create S3 Bucket
+
+```
 my-model-mlopsproj
 us-east-1
+```
 
-Add S3 utility modules
+Add AWS code:
 
-aws_storage/
+* `aws_storage/`
+* `s3_estimator.py`
 
-entity/s3_estimator.py
+---
 
-🧪 6. Model Evaluation & Model Pusher
+# 🧪 6. Model Evaluation & Pusher
 
-Evaluate new model vs existing S3 model
+* Compare new model vs production model (S3)
+* Push only improved models
+* Maintain registry versioning
 
-If improved, push model to registry
+---
 
-Logs versioning + promotion flow
-
-⚡ 7. Prediction Pipeline + FastAPI App
-
-Build prediction_pipeline.py
-
-Create app.py
-
-Add static/ and templates/
+# ⚡ 7. Prediction Pipeline + FastAPI App
 
 Run locally:
 
+```bash
 python app.py
-
+```
 
 Endpoints:
 
+```
 /predict
 /train
+```
 
-🐳 8. Docker + CI/CD Deployments
-Dockerize the application
+---
 
-Create:
+# 🐳 8. Docker + CI/CD
 
-Dockerfile
+### Docker
 
-.dockerignore
+* `Dockerfile`
+* `.dockerignore`
 
-GitHub Actions workflow
+### GitHub Actions workflow
 
-Located at:
-
+```
 .github/workflows/aws.yaml
+```
 
-AWS ECR Setup
+### AWS ECR Repo
 
-Repository:
-
+```
 vehicleproj
+```
 
-AWS EC2 Setup
+### EC2 Server
 
-Ubuntu 24.04
+* Ubuntu 24.04
+* t2.medium
+* 30GB storage
 
-t2.medium
+### Install Docker
 
-30GB storage
-
-Allow HTTP/HTTPS
-
-Install Docker
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker ubuntu
 newgrp docker
+```
 
-🛰️ 9. Connect GitHub → EC2 (Self-Hosted Runner)
+---
+
+# 🛰️ 9. GitHub Self-Hosted Runner
 
 GitHub → Settings → Actions → Runners → Add Runner
+Run provided commands on EC2.
 
-Run all commands on EC2:
+Add GitHub Secrets:
 
-Download
-
-Configure
-
-Run
-
-Add repo secrets:
-
+```
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 AWS_DEFAULT_REGION
 ECR_REPO
+```
 
-🚀 10. Deployment
-Open port 5080 in EC2:
-Custom TCP | 5080 | 0.0.0.0/0
+---
+
+# 🚀 10. Deployment
+
+Enable inbound rule:
+
+```
+Port: 5080
+Source: 0.0.0.0/0
+```
 
 Access app:
+
+```
 http://<EC2-IP>:5080
+```
 
+Training route:
 
-Training:
-
+```
 /training
+```
 
-🛠️ Tech Stack
-Machine Learning & Python
+---
 
-Python 3.10
+# 🛠️ Tech Stack
 
-Pandas, NumPy, Sklearn
+### ML & Python
 
-Custom pipelines + artifacts
+* Python 3.10
+* Sklearn
+* Pandas / NumPy
 
-Jinja2, FastAPI
+### Data
 
-Data Engineering
+* MongoDB Atlas
+* Data validation
+* Data transformation
 
-MongoDB Atlas
+### MLOps / DevOps
 
-Data validation with schema
+* Docker
+* GitHub Actions
+* AWS EC2
+* AWS ECR
+* AWS S3
 
-Data ingestion pipelines
+### Backend
 
-Cloud & DevOps
+* FastAPI
+* Jinja2
 
-AWS EC2
+---
 
-AWS S3
+# 📌 Pipeline Overview
 
-AWS ECR
-
-IAM
-
-Docker
-
-GitHub Actions
-
-Self-hosted Runner
-
-📌 Pipeline Overview
+```
 Template → Setup → MongoDB → Ingestion → Validation → Transformation → 
-Trainer → Evaluation → S3 → Docker → CI/CD → EC2 → FastAPI App
+Training → Evaluation → S3 Registry → Docker → CI/CD → EC2 → FastAPI
+```
+
+```
+
